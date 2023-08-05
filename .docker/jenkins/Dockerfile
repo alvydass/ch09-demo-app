@@ -1,0 +1,1 @@
+FROM trion/jenkins-docker-client
