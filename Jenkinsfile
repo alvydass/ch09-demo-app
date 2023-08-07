@@ -31,6 +31,7 @@ pipeline {
                sh 'ls'
                sh 'cd web'
                sh 'ls'
+               sh 'cat package.json'
                sh 'npm test'
              }
         }
