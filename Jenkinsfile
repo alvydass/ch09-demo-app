@@ -20,7 +20,8 @@ pipeline {
               echo('Building...')
               sh 'pwd'
               sh 'ls'
-              sh 'cd web'
+              sh 'cd ./web'
+              sh 'ls'
               sh 'npm install'
             }
         }
@@ -29,7 +30,7 @@ pipeline {
                echo('Testing...')
                sh 'pwd'
                sh 'ls'
-               sh 'cd web'
+               sh 'cd ./web'
                sh 'ls'
                sh 'cat package.json'
                sh 'npm test'
