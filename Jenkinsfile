@@ -20,7 +20,7 @@ pipeline {
               echo('Building...')
               sh 'pwd'
               sh 'ls'
-              sh 'npm init -y'
+              sh 'cd web'
               sh 'npm install'
             }
         }
