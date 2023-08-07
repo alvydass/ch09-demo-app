@@ -20,9 +20,10 @@ pipeline {
               echo('Building...')
               sh 'pwd'
               sh 'ls'
-              dir('web')
-              sh 'ls'
-              sh 'npm install'
+              dir('web') {
+                sh 'ls'
+                sh 'npm install'
+              }
             }
         }
         stage('Test') {
@@ -30,10 +31,11 @@ pipeline {
                echo('Testing...')
                sh 'pwd'
                sh 'ls'
-               dir('web')
-               sh 'ls'
-               sh 'cat package.json'
-               sh 'npm test'
+               dir('web') {
+                 sh 'ls'
+                 sh 'cat package.json'
+                 sh 'npm test'
+               }
              }
         }
         stage('Build & Push Docker image') {
