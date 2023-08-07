@@ -19,6 +19,7 @@ pipeline {
             steps {
               echo('Building...')
               sh 'pwd'
+              sh 'ls'
               sh 'npm init -y'
               sh 'npm install'
             }
@@ -27,6 +28,7 @@ pipeline {
              steps {
                echo('Testing...')
                sh 'pwd'
+               sh 'ls'
                sh 'npm test'
              }
         }
