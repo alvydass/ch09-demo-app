@@ -18,6 +18,7 @@ pipeline {
         stage('Build') {
             steps {
               echo('Building...')
+              sh 'npm init -y'
               sh 'npm install'
             }
         }
