@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
               echo('Building...')
-              echo 'pwd'
+              sh 'pwd'
               sh 'npm init -y'
               sh 'npm install'
             }
@@ -26,7 +26,7 @@ pipeline {
         stage('Test') {
              steps {
                echo('Testing...')
-                echo 'pwd'
+               sh 'pwd'
                sh 'npm test'
              }
         }
