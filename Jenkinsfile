@@ -29,6 +29,7 @@ pipeline {
                echo('Testing...')
                sh 'pwd'
                sh 'ls'
+               sh 'cd web'
                sh 'npm test'
              }
         }
