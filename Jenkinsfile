@@ -30,6 +30,7 @@ pipeline {
                sh 'pwd'
                sh 'ls'
                sh 'cd web'
+               sh 'ls'
                sh 'npm test'
              }
         }
